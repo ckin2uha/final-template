@@ -527,9 +527,14 @@
 
 .video-blok figure {
   width: 100%;
-  position: absolute;
+  float: left;
   text-align: center;
   top: 35%;
   color: #fff;
+}
+
+.video-blok figure .video-btn:hover {
+  cursor: pointer;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
