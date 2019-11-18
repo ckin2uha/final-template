@@ -413,3 +413,215 @@ main
                 transition: all 0.4s
         .text-video
             padding: 3vh 
+.iphone
+    height: 60vh
+    background-image: url('../img/iPhone_in_hand.png')
+    background-repeat: no-repeat
+    background-position-x: 30%
+    background-position-y: 40%
+    padding-top: 15%
+    .title-iphone
+        margin-left: 45%
+        width: 30%
+        color: #555555
+        font-family: "Raleway - Semi Bold"
+        font-size: 30px
+        font-weight: 400
+    .text-iphone
+        margin-left: 45%
+        width: 30%
+        color: #8c8c8c
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 300
+        line-height: 28px
+    .list-iphone
+        margin-left: 50%
+        margin-top: 5vh
+        list-style-type: none
+        li
+            padding: 1vh
+            position: relative
+            &::before
+                position: absolute
+                left: -2.5vw
+                display: block
+                content: ''
+                background-image: url('../img/01.png')
+                width: 21px
+                height: 21px
+.info    
+    display: flex
+    background-color: #f4f5f8
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+    justify-content: center
+    div
+        width: 60%
+        display: flex
+        justify-content: space-between
+        figure
+            text-align: center
+            padding-top: 5vh
+        figcaption
+            margin-top: 2vh
+            .number
+                margin-top: 2vh
+                color: #ffffff
+                font-family: "Montserrat - Ultra Light"
+                font-size: 48px
+                font-weight: 400
+                line-height: 36px
+            .text
+                margin-top: 2vh
+                color: #c7b299
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 300
+                line-height: 20px
+                text-transform: uppercase
+                margin-bottom: 5vh
+                &::after
+                    display: block
+                    content: ''
+                    height: 2px
+                    background-color: white
+                    margin: 1vh auto
+                    width: 20px
+
+.post
+    margin: 0 auto
+    text-align: center
+    .title-post
+        margin-top: 5vh
+        color: #555555
+        font-family: "Raleway - Semi Bold"
+        font-size: 30px
+        font-weight: 400
+    .text-post
+        margin-top: 2vh
+        width: 100%
+        color: #8c8c8c
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 300
+        line-height: 28px
+    div
+        margin: 0 auto
+        padding-top: 3vh
+        width: 90%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        figure
+            width: min-content
+            margin: 1vh
+            figcaption
+                text-align: left
+                padding-left: 1vw
+                span
+                    width: 100%
+                    color: #555555
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                p
+                    padding-top: 1vh
+                    padding-bottom: 1vh
+                    color: #8c8c8c
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: 22px
+                a
+                    display: block
+                    padding-bottom: 1vh
+                    color: #c7b299
+                    text-decoration: none
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: 20px
+                    position: relative
+                    &::after
+                        top: 15%
+                        left: 20%
+                        position: absolute
+                        content: ''
+                        border: 5px solid transparent
+                        border-left: 10px solid#c7b299
+                        display: inline-block
+                        width: 0
+                        height: 0
+            &:hover
+                background-color: #362f2d
+                span
+                    color: #c7b299
+    .pagination
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-bottom: 5vh
+        svg
+            fill:#d1d1d1
+        a
+            display: block
+            width: min-content
+            padding: .2em
+
+footer
+    background-color: #111111
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 300
+    line-height: 20px
+    display: flex
+    flex-wrap: wrap
+    line-height: 10vh
+    .footer    
+        display: flex
+        justify-content: space-between
+        width: 60%
+        margin: 0 auto
+        a
+            display: flex
+            text-decoration: none
+            color: #252525
+        ul
+            display: flex
+            list-style-type: none
+            justify-content: space-between
+            font-weight: 300
+        span
+            color: #555555
+        .footer-left
+            li
+                padding: 5px
+                position: relative
+                &::after
+                    margin: 5px
+                    display: inline-block
+                    content: ''
+                    width: 1px
+                    height: 16px
+                    background-color: #555555
+                    position: absolute
+                    top: 40%
+                    right: -5px
+                &:last-child
+                    &::after
+                        display: none
+        .footer-right
+            li
+                padding: 5px
+                position: relative
+                &:last-child
+                    &::after
+                        margin: 5px
+                        display: inline-block
+                        content: ''
+                        width: 1px
+                        height: 16px
+                        background-color: #555555
+                        position: absolute
+                        top: 40%
+                        left: -5px
