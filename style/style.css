@@ -528,6 +528,16 @@ main .header-slaider .pagination .link-active {
   font-weight: 500;
 }
 
+.latest .latest-group-card .latest-card .latest-card-title::before {
+  height: 10px;
+  content: '';
+  border: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  left: 10%;
+  top: 69%;
+}
+
 .latest .latest-group-card .latest-card .latest-card-text {
   padding: 0.5vh 1.5vw;
   width: 100%;
@@ -538,24 +548,28 @@ main .header-slaider .pagination .link-active {
   line-height: 20px;
 }
 
+.latest .card:hover {
+  background-color: #362f2d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .latest .card-icon-hover {
   position: absolute;
-  top: 40%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
-  height: 100%;
+  top: 0;
+  height: 43%;
   width: 100%;
   text-align: center;
   opacity: 0;
+  padding-top: 30%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .latest .card-icon-hover:hover {
-  opacity: 0.5;
-  background-color: #362f2d;
-}
-
-.latest .card-icon-hover a {
-  line-height: 1600%;
+  opacity: 1;
+  -webkit-box-shadow: inset 0px 0 1000px 30px;
+          box-shadow: inset 0px 0 1000px 30px;
 }
 
 .latest .card-icon-hover .link {
@@ -603,6 +617,7 @@ main .header-slaider .pagination .link-active {
 }
 
 .video-blok figure {
+  position: absolute;
   width: 100%;
   float: left;
   text-align: center;
@@ -610,8 +625,19 @@ main .header-slaider .pagination .link-active {
   color: #fff;
 }
 
+.video-blok figure .video-btn {
+  fill: #ffffff;
+  padding-bottom: 2vh;
+}
+
 .video-blok figure .video-btn:hover {
   cursor: pointer;
-  color: red;
+  fill: #c7b299;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.video-blok figure .text-video {
+  padding: 3vh;
 }
 /*# sourceMappingURL=style.css.map */

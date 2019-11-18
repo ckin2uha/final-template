@@ -334,6 +334,14 @@ main
                 font-family: Raleway
                 font-size: 20px
                 font-weight: 500
+                &::before
+                    height: 10px
+                    content: ''
+                    border: 12px solid transparent
+                    border-bottom: 12px solid rgb(255, 255, 255)
+                    position: absolute
+                    left: 10%
+                    top: 69%
             .latest-card-text
                 padding: 0.5vh 1.5vw 
                 width: 100%
@@ -342,19 +350,24 @@ main
                 font-size: 14px
                 font-weight: 300
                 line-height: 20px
+    .card
+        &:hover
+            background-color: #362f2d
+            color: #ffffff
+            cursor: pointer
     .card-icon-hover
         position: absolute
-        top: 40%;
-        transform: translateY(-40%);
-        height: 100%
+        top: 0
+        height: 43%
         width: 100%
         text-align: center
         opacity: 0
+        padding-top: 30%
+        transition: all 0.2s
         &:hover
-            opacity: 0.5
-            background-color: #362f2d
-        a
-            line-height: 1600%
+            opacity: 1
+            box-shadow: inset 0px 0 1000px 30px
+
         .link
             padding-right: 2vw
     .nav
@@ -385,13 +398,18 @@ main
     .video-bg
         mix-blend-mode: overlay
     figure
+        position: absolute
         width: 100%  
         float: left
         text-align: center
         top: 35%
         color: #fff
         .video-btn
-            
+            fill: #ffffff
+            padding-bottom: 2vh
             &:hover
                 cursor: pointer
-                color: red
+                fill: #c7b299
+                transition: all 0.4s
+        .text-video
+            padding: 3vh 
