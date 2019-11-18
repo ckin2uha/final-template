@@ -515,6 +515,7 @@ main
         figure
             width: min-content
             margin: 1vh
+            transition: all .4s
             figcaption
                 text-align: left
                 padding-left: 1vw
@@ -552,8 +553,12 @@ main
                         display: inline-block
                         width: 0
                         height: 0
+                    &:hover
+                        text-decoration: underline
+                        transition: all .4s
             &:hover
                 background-color: #362f2d
+                transition: all .4s
                 span
                     color: #c7b299
     .pagination
@@ -563,11 +568,184 @@ main
         margin-bottom: 5vh
         svg
             fill:#d1d1d1
+            transition: all .4s
+            &:hover
+                fill: #c7b299
+                transition: all .4s
         a
             display: block
             width: min-content
             padding: .2em
 
+.friends
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    background-image: url('../img/frends.jpg')
+    background-repeat: no-repeat
+    a
+        margin: 1vh 1vw
+        padding: 9vh 2vw
+        img
+            width: min-content
+            height: min-content
+            display: inline-block
+            box-sizing: border-box
+            transition: all .4s
+        &:hover
+            outline: 1px solid gray
+            transition: all .4s
+        &:focus
+            outline: 1px solid gray
+            transition: all .4s
+.footer-main
+        width: 100%
+        background-color: #191919
+        display: flex
+        .w60-footer
+            margin: 0 auto
+            padding-top: 5vh
+            padding-bottom: 5vh
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        .title-logo
+            line-height: 64px
+        .card-logo
+            width: 15vw
+            fill: #fff
+            .logotype-text
+                color: #ffffff
+                font-family: Raleway
+                font-size: 34px
+                font-weight: 400
+                letter-spacing: -1.36px
+            .card-logo-text
+                padding-top: 2vh
+                color: #555555
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 300
+                line-height: 24px
+            a
+                text-decoration: none
+            .read
+                margin-top: 1vh
+                margin-bottom: 1vh
+                display: block
+                color: #ffffff
+                text-decoration: none
+                position: relative
+                &::after
+                    top: 20%
+                    left: 45%
+                    position: absolute
+                    content: ''
+                    border: 5px solid transparent
+                    border-left: 10px solid #ffffff
+                    display: inline-block
+                    width: 0
+                    height: 0
+        .recent
+            width: 15vw
+            .recent-title
+                color: #ffffff
+                font-family: Raleway
+                font-size: 24px
+                font-weight: 700
+                padding-bottom: 1em
+            figure
+                &:nth-child(2n)
+                    .date
+                        color: #363636
+                        font-family: Montserrat
+                        font-size: 12px
+                        font-weight: 300
+                        line-height: 20px
+                        padding: 20px 0
+                    p
+                        padding: 0.5em 0
+                        color: #555555
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 300
+                        line-height: 20px
+            figure
+                &:nth-child(2n+1)
+                    .date
+                        color: #ffffff
+                    p
+                        color: #c7b299
+                    &::before
+                        display: block
+                        margin: 1em 0
+                        content: ''
+                        width: 100%
+                        background-color: #595f6f
+                        height: 1px
+                    &::after
+                        display: block
+                        margin: 1em 0
+                        content: ''
+                        width: 100%
+                        background-color: #595f6f
+                        height: 1px
+        .twit
+            width: 15vw
+            .twit-title
+                color: #ffffff
+                font-family: Raleway
+                font-size: 24px
+                font-weight: 700
+                padding-bottom: 1em
+            figure
+                &:nth-child(2n)
+                    .date
+                        color: #363636
+                        font-family: Montserrat
+                        font-size: 12px
+                        font-weight: 300
+                        line-height: 20px
+                        padding: 20px 0
+                    p
+                        padding: 0.5em 0
+                        color: #555555
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 300
+                        line-height: 20px
+            figure
+                &:nth-child(2n+1)
+                    .date
+                        color: #363636
+                    p
+                        color: #555555
+                    &::before
+                        display: block
+                        margin: 1em 0
+                        content: ''
+                        width: 100%
+                        background-color: #595f6f
+                        height: 1px
+                    &::after
+                        display: block
+                        margin: 1em 0
+                        content: ''
+                        width: 100%
+                        background-color: #595f6f
+                        height: 1px
+        .widget
+            display: flex
+            flex-wrap: wrap
+            max-width: 15vw
+            height: max-content
+            justify-content: center
+            margin: auto
+.blue
+    color: #00bff3
+.white
+    color: #959595
+    cursor: pointer
 footer
     background-color: #111111
     font-family: Montserrat
@@ -577,6 +755,7 @@ footer
     display: flex
     flex-wrap: wrap
     line-height: 10vh
+
     .footer    
         display: flex
         justify-content: space-between
