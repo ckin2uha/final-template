@@ -791,6 +791,8 @@ main .header-slaider .pagination .link-active {
   width: -moz-min-content;
   width: min-content;
   margin: 1vh;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .post div figure figcaption {
@@ -840,8 +842,16 @@ main .header-slaider .pagination .link-active {
   height: 0;
 }
 
+.post div figure figcaption a:hover {
+  text-decoration: underline;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
 .post div figure:hover {
   background-color: #362f2d;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .post div figure:hover span {
@@ -861,6 +871,14 @@ main .header-slaider .pagination .link-active {
 
 .post .pagination svg {
   fill: #d1d1d1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.post .pagination svg:hover {
+  fill: #c7b299;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .post .pagination a {
@@ -869,6 +887,260 @@ main .header-slaider .pagination .link-active {
   width: -moz-min-content;
   width: min-content;
   padding: .2em;
+}
+
+.friends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/frends.jpg");
+  background-repeat: no-repeat;
+}
+
+.friends a {
+  margin: 1vh 1vw;
+  padding: 9vh 2vw;
+}
+
+.friends a img {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.friends a:hover {
+  outline: 1px solid gray;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.friends a:focus {
+  outline: 1px solid gray;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.footer-main {
+  width: 100%;
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-main .w60-footer {
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-main .title-logo {
+  line-height: 64px;
+}
+
+.footer-main .card-logo {
+  width: 15vw;
+  fill: #fff;
+}
+
+.footer-main .card-logo .logotype-text {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+}
+
+.footer-main .card-logo .card-logo-text {
+  padding-top: 2vh;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.footer-main .card-logo a {
+  text-decoration: none;
+}
+
+.footer-main .card-logo .read {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-main .card-logo .read::after {
+  top: 20%;
+  left: 45%;
+  position: absolute;
+  content: '';
+  border: 5px solid transparent;
+  border-left: 10px solid #ffffff;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.footer-main .recent {
+  width: 15vw;
+}
+
+.footer-main .recent .recent-title {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.footer-main .recent figure:nth-child(2n) .date {
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+.footer-main .recent figure:nth-child(2n) p {
+  padding: 0.5em 0;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer-main .recent figure:nth-child(2n+1) .date {
+  color: #ffffff;
+}
+
+.footer-main .recent figure:nth-child(2n+1) p {
+  color: #c7b299;
+}
+
+.footer-main .recent figure:nth-child(2n+1)::before {
+  display: block;
+  margin: 1em 0;
+  content: '';
+  width: 100%;
+  background-color: #595f6f;
+  height: 1px;
+}
+
+.footer-main .recent figure:nth-child(2n+1)::after {
+  display: block;
+  margin: 1em 0;
+  content: '';
+  width: 100%;
+  background-color: #595f6f;
+  height: 1px;
+}
+
+.footer-main .twit {
+  width: 15vw;
+}
+
+.footer-main .twit .twit-title {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.footer-main .twit figure:nth-child(2n) .date {
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+.footer-main .twit figure:nth-child(2n) p {
+  padding: 0.5em 0;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer-main .twit figure:nth-child(2n+1) .date {
+  color: #363636;
+}
+
+.footer-main .twit figure:nth-child(2n+1) p {
+  color: #555555;
+}
+
+.footer-main .twit figure:nth-child(2n+1)::before {
+  display: block;
+  margin: 1em 0;
+  content: '';
+  width: 100%;
+  background-color: #595f6f;
+  height: 1px;
+}
+
+.footer-main .twit figure:nth-child(2n+1)::after {
+  display: block;
+  margin: 1em 0;
+  content: '';
+  width: 100%;
+  background-color: #595f6f;
+  height: 1px;
+}
+
+.footer-main .widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 15vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.blue {
+  color: #00bff3;
+}
+
+.white {
+  color: #959595;
+  cursor: pointer;
 }
 
 footer {
