@@ -841,8 +841,8 @@ main .header-slaider .pagination .link-active {
 }
 
 .post div figure figcaption a::after {
-  top: 15%;
-  left: 20%;
+  top: 20%;
+  left: 25%;
   position: absolute;
   content: '';
   border: 5px solid transparent;
