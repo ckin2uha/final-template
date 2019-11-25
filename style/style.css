@@ -910,6 +910,7 @@ main .header-slaider .pagination .link-active {
           justify-content: center;
   background-image: url("../img/frends.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .friends a {
